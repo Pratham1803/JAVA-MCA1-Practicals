@@ -13,7 +13,7 @@ public class CRUDOperation {
 
         do {
             System.out.println("!----------- Select Operation -----------!\n");
-            System.out.println("\t1. Inset Data::\n\t2. Display All Data::\n\t3. Update::\n\t4. Delete ::\n\t5. Search::\\n\\t6. Exit::");
+            System.out.println("\t1. Inset Data::\n\t2. Display All Data::\n\t3. Update::\n\t4. Delete ::\n\t5. Search::\n\t6. Exit::");
             System.out.print("\n- select option: ");
             option = sc.nextInt();
 
@@ -49,11 +49,30 @@ public class CRUDOperation {
                     }
                 System.out.println("--------------------------------------------------------\n");                
             } else if (option == 3) {
-                
+                try{
+                    System.out.print("\t- Enter Id : ");
+                    int id = sc.nextInt();
+                    db.updateStudent(id);
+                }catch(Exception e){
+                    System.out.println("Error:: "+e.getMessage());
+                }
             } else if (option == 4) {
-
+                try{
+                    System.out.print("\t- Enter Id : ");
+                    int id = sc.nextInt();
+                    db.deleteStudent(id);
+                }catch(Exception e){
+                    System.out.println("Error:: "+e.getMessage());
+                }
             } else if (option == 5) {
-                
+                try{
+                    System.out.print("\t- Enter Id : ");
+                    int id = sc.nextInt();
+                    StudentModel student = db.getStudent(id);
+                    System.out.println("\n\t-| "+student.getStudentId()+" | "+student.getStudentName()+" | "+student.getStudentGender()+" | "+student.getStudentContact()+" |");
+                }catch(Exception e){
+                    System.out.println("Error:: "+e.getMessage());
+                }
             }else if (option == 6){
                 System.exit(0);
             }
