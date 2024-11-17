@@ -24,5 +24,6 @@ public class SqServlet extends HttpServlet {
         i *= i;
         PrintWriter out = resp.getWriter();
         out.println("square = "+i);
+              
     }    
 }

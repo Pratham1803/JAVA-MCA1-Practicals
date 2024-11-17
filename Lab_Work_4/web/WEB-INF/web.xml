@@ -15,4 +15,153 @@
         <url-pattern>/que3</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>s4</servlet-name>
+        <servlet-class>que4.AddNumPage</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>s4</servlet-name>
+        <url-pattern>/Addition</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>s4Result</servlet-name>
+        <servlet-class>que4.AddResult</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>s4Result</servlet-name>
+        <url-pattern>/AddResult</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question6</servlet-name>
+        <servlet-class>que6.Que6</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question6</servlet-name>
+        <url-pattern>/Que6</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question7</servlet-name>
+        <servlet-class>que7.RegistrationServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question7</servlet-name>
+        <url-pattern>/Que7</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question7Welcome</servlet-name>
+        <servlet-class>que7.WelcomeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question7Welcome</servlet-name>
+        <url-pattern>/WelcomePage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question8</servlet-name>
+        <servlet-class>que8.Que8Calculation</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question8</servlet-name>
+        <url-pattern>/Q8Result</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question9</servlet-name>
+        <servlet-class>que9.Que9Calculation</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question9</servlet-name>
+        <url-pattern>/Q9Result</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question10</servlet-name>
+        <servlet-class>que10.Q10CheckBox</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question10</servlet-name>
+        <url-pattern>/Q10FavPlayers</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question11</servlet-name>
+        <servlet-class>que11.Q11ServletConfig</servlet-class>
+        <init-param>
+            <param-name>uniName</param-name>
+            <param-value>CHARUSAT</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question11</servlet-name>
+        <url-pattern>/Q11ServletConfig</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question12</servlet-name>
+        <servlet-class>que12.Q12MultiServletConfig</servlet-class>
+        <init-param>
+            <param-name>fName</param-name>
+            <param-value>Pratham</param-value>
+        </init-param>
+        <init-param>
+            <param-name>mName</param-name>
+            <param-value>Maheshkumar</param-value>
+        </init-param>
+        <init-param>
+            <param-name>lName</param-name>
+            <param-value>Rathod</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question12</servlet-name>
+        <url-pattern>/Q12MultiServletConfig</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question13</servlet-name>
+        <servlet-class>que13.Que13ServletContext</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question13</servlet-name>
+        <url-pattern>/Q13ServletContext</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Question14</servlet-name>
+        <servlet-class>que14.Que14MultiServletContext</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Question14</servlet-name>
+        <url-pattern>/Q14MultiServletContext</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+        <param-name>college</param-name>
+        <param-value>CMPICA</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>course1</param-name>
+        <param-value>BCA</param-value>
+    </context-param>
+    <context-param>
+        <param-name>course2</param-name>
+        <param-value>MCA</param-value>
+    </context-param>
 </web-app>
